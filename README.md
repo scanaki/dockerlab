@@ -12,4 +12,4 @@ Create your service and run one puppet-agent per node using node's hostname as l
     docker service create -d --name "agent" --network puppet --mode global --constraint "node.labels.hostuse == myvm" --hostname "{{.Node.Hostname}}" thierryjl/puppet-agent
 
 ## Here below another interesting tutorial to look at: 
-* [Running service in swarm mode] (https://blog.codeship.com/running-services-within-docker-swarm/)
+ * [blog.codeship.com] (https://blog.codeship.com/running-services-within-docker-swarm/ "Running service in swarm mode")
